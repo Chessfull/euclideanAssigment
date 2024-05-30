@@ -1,6 +1,6 @@
 import random #Imported for creating random points
 
-#Create a list that includes 2D points like (x,y) in tuples
+#1-Create a list that includes 2D points like (x,y) in tuples
 points=[]
 try:
     numberPoints=int(input("How many points you want add in this list?"))
@@ -13,13 +13,13 @@ for i in range(numberPoints):
     points.append((x1,y1))
 print(points)
 
-#Define function ‘euclideanDistance’ that calculated euclidean distance between two 2D points
+#2-Define function ‘euclideanDistance’ that calculated euclidean distance between two 2D points
 def euclideanDistance(userPoint1,userPoint2):
     x1,y1=userPoint1
     x2,y2=userPoint2
     return (((x2-x1)**2)+((y2-y1)**2))*0.5
 
-#Use loop for calculation each point euclidean distance in 'points' that you create and add these as new list named 'distances'
+#3-Use loop for calculation each point euclidean distance in 'points' that you create and add these as new list named 'distances'
 distances=[]
 for x_ in range(len(points)):
     for y_ in range(len(points)):
@@ -29,7 +29,7 @@ for x_ in range(len(points)):
         distances.append(eachPointCalculation)
 print(distances)
 
-#Find minimum distance in 'distances' list
+#4-Find minimum distance in 'distances' list
 minDistance=[]
 for i in distances:
     minDistance.append(i)
