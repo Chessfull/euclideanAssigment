@@ -1,5 +1,7 @@
 # euclideanAssigment
-Assignment task in the 'CyberStart' program, a collaboration between 'Kodluyoruz' and 'IBM'. Steps:
+Assignment task in the 'CyberStart' program, a collaboration between 'Kodluyoruz' and 'IBM'. 
+
+Steps:
 
 1-Defining Points:
 Create a list called 'points'. This list should contain tuples representing points in 2D space. For example, the point '(x, y)' will be represented as a tuple '(x, y)'.
